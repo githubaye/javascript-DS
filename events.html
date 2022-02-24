@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+</head>
+<body>
+    <pre>
+        event types:
+        onclick, ondbclick,onchange,onmouseover,onmouseout,
+        onkeyup, onload, onsubmit
+    </pre>
+    <button onmouseover="demo()">click here</button>
+    <p id="result"></p>
+
+    <script>
+        function demo(){
+            // document.write(`this is a click event`)
+            document.getElementById('result').innerHTML=('This is a click event')
+        }
+    </script>
+</body>
+</html>

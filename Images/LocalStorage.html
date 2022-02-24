@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+</head>
+<body>
+   <script>
+       localStorage.setItem('javascript','We are Millennials')
+        const show= localStorage.getItem('javascript')
+        document.write(show) 
+
+//JSON - javascript object notation
+
+        let student_details={
+     'firstname' : 'Randall',
+     'lastName':'Smith',
+     'subjects':["maths",'science','bootsrap','javascript','git','react']
+
+ }
+    const objectToString = JSON.stringify(student_details) 
+    localStorage.setItem('students',objectToString)
+    const data = localStorage.getItem('students')
+    // console.log(data)
+
+    // to convert string to JSON object
+    const stringToObject = JSON.parse(data)
+    console.log(stringToObject)
+    console.log(stringToObject.subjects[0])
+    
+   </script> 
+</body>
+</html>
+
+
+
+
+

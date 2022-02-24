@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE SLIDER</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container {
+            text-align: center;
+            height: 350px;
+            width: 700px;
+            margin: auto;
+            padding: auto;
+            border-radius: 10px;
+            background-size: auto 100%;
+        }
+
+        .container img {
+            height: 100%;
+            width: 90vh;
+            padding: auto;
+        }
+
+        .left {
+            font-size: 30px;
+            background-color: rgb(150, 62, 150);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            
+
+        }
+
+        .right {
+            font-size: 30px;
+            background-color: forestgreen;
+            color: aqua;
+            border-radius: 10px;
+        
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="Images/bb.jpg" alt="">
+        <button class="left" onclick="prev()"> Prev  </button>
+        <button class="right" onclick="Nex()">Next </button>
+    </div>
+    <script src="imageslider.js">
+
+    </script>
+
+</body>
+
+</html>

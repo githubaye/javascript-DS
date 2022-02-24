@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Date Methods</title>
+</head>
+<body>
+    <script>
+
+        const date= new Date()
+        document.write(`${date}<br>`)
+        
+        // to get year use getFullYear
+        document.write(` Year is ${date.getFullYear()}<br>`)
+        
+        // to get month -- use getMonth() .--> returns betwenn 0 and 11
+        document.write(` Month is ${date.getMonth()}<br>`)
+
+        //to get date use getDate() ->> 1-31
+        document.write(` date is ${date.getDate()} <br>`)
+
+        //to get day- use getDay() >- 0-6
+        document.write(` Day is ${date.getDay()}<br>`)
+
+        //to get hour ->> use getHour()
+        document.write(`hour is ${date.getHours()}<br>`)
+        // to get minutes
+        document.write(`${date.getMinutes()}<br>`)
+        
+        </script>
+</body>
+</html>

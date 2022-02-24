@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+</head>
+
+<body>
+    <script>
+        const myText = ' the spaces are also counted as also also character and takes up length of the String'
+        document.write(`${myText}`)
+        //to find the length of the string
+
+        document.write(`${myText.length} <br>`)
+        // to find the specific string position in a whole string length
+        document.write(`${myText.indexOf('are')} <br>`)
+        // to find the last position of the repeated string use lastIndexOf
+        document.write(`${myText.lastIndexOf('the')}<br>`)
+
+        //to replace the string with anothoer string : use replace
+        document.write(`${myText.replace('also', 'counts')}<br>`)
+
+        //replaceAll -> to replace all the 
+        document.write(`${myText.replaceAll('also', 'ded')}`)
+
+
+        // with regular expression and i we can make insensitive
+        document.write(`${myText.replace(/ALSO/i,'nan')} <br>`)
+
+        // substring- part of the string
+        // slice(start,end) - (5,10)
+        //substring(start,end) - (5,10)
+        //substr(start,length) - (5,10)
+
+        document.write(`${myText.slice(0,15)}......<br>`)
+
+        //concat()
+        //charAt()
+        //charCodeAT()
+        //split()
+
+        document.write(`${myText.concat(2,4)}<br>`)
+
+        // document.write(`${myText.charAt(0.2} <br>`)
+
+        document.write(`${myText.charCodeAt(5,10)}`)
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

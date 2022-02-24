@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listener</title>
+</head>
+<body>
+    <button id="btn">Click me Please</button>
+    <p id="result"></p>
+    <script>
+        const my_demo=()=> {
+            document.getElementById('result').innerHTML=new Date()
+        }
+        const my_btn=document.getElementById('btn')
+        my_btn.addEventListener('click',my_demo)
+
+        
+        
+</script>
+    
+</body>
+</html>

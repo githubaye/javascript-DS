@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditiona if else if else</title>
+</head>
+<body>
+    <input type="number" id="first" placeholder="enter first number">
+   <br> <br>
+   <input type="number"  id="second" placeholder="enter 2nd number">
+  <button onclick="compare()">Click me</button>
+  <p id="result"></p>
+
+  <script>
+      const compare=()=>{
+
+      
+        
+         const a = document.getElementById('first').value
+        const b = document.getElementById('second').value
+        if(a>b){
+document.getElementById('result').innerHTML='first num is greater'
+        } 
+        else if(a<b){
+            document.getElementById('result').innerHTML='second num is greater'
+
+
+        }
+         else{
+            document.getElementById('result').innerHTML='first num is equal to second'
+        }
+      }
+    </script>
+</body>
+</html>

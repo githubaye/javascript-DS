@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MathMethods</title>
+  </head>
+
+  <body>
+    <script>
+      const pi = Math.PI;
+      document.write(`${pi.toFixed(5)}<br>`);
+
+      //SQUARE ROOT - sqrt
+
+      document.write(`${Math.sqrt(225)}<br>`);
+
+      // POWER -- pow
+      document.write(`${Math.pow(8, 3)}<br>`);
+
+      //round >-- round()
+      document.write(`${Math.round(6.49)} <br>`);
+
+      // ceil >- It always round up the VALUE that does not depend upon on the decimal value
+      document.write(`${Math.ceil(5.188888)}<br>`);
+
+      //floor .-- always round down the value of nearest integer number
+      document.write(`${Math.floor(9.34555)}<br>`);
+
+      //random number > it generates value between 0 and 1 by default
+      document.write(`${Math.random()}<br>`);
+
+      //to convert random number from deciaml to whole number
+      let randomNumber = Math.floor(Math.random() * 20); //returns betwenn o and 19
+      document.write(`${randomNumber}<br>`);
+      let customValue = Math.floor(Math.random() * 100) + 1; // retunrs betwenn 1 and 20
+      document.write(`${customValue}<br>`)
+
+      
+    </script>
+  </body>
+</html>

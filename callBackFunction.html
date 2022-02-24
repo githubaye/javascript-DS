@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back FuncStion</title>
+</head>
+<body>
+
+    <div></div>
+    
+    <script>
+        let news=[
+            {newsTitle:'First Heading',newsContent:'hello world'},
+            {newsTitle:'Second Heading',newsContent:'callback Function'}
+        ]
+        function showNews(){
+            setTimeout(()=>{
+                let result=''
+                news.forEach((post)=>{
+                    result += `<li>${post.newsTitle}</li>`
+                })
+                document.querySelector('div').innerHTML=result
+
+            },2000)
+        }
+
+        // calling the function
+
+        // showNews()
+
+        //define function addNews()
+
+        // function addNews(newsData){
+        //     setTimeout(()=>{
+        //         news.push(newsData)
+
+        //     },3000)
+        // }
+
+        //call the function addNews()
+
+        // addNews({newsTitle:'Covid is Outbursting',newsContent:'added from another function'})
+
+
+        //define the function
+
+        function addNews(newsData,callbackFunction){
+            setTimeout(()=>{
+                news.push(newsData)
+                //call the funciton after adding the news
+
+                callbackFunction();
+
+            },3000)
+        }
+
+        //call the addNews() function with showNews() as call back
+
+        addNews({newsTitle:'Covid is Outbursting',newsContent:'added from another function'},showNews)
+
+    </script>
+</body>
+</html>
